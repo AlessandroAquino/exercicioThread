@@ -9,7 +9,7 @@ public class Principal {
 		Random random = new Random();
 		int n = 1;
 		for (int i=0; i<10; i++) {
-			int num = random.nextInt(11);
+			int num = (random.nextInt(10)) + 1;
 			n = num;
 			Thread tOp = new ThreadOp(n);
 			tOp.start();
